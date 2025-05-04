@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rekap Surat</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="xlsx.full.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Rekap Surat</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Tambah Surat</h2>
+      <form id="suratForm">
+        <input type="date" id="tanggal" required />
+        <input type="text" id="nomor" placeholder="Nomor Surat" required />
+        <input type="text" id="tujuan" placeholder="Tujuan" required />
+        <input type="text" id="isi" placeholder="Isi Surat" required />
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <input type="text" id="searchInput" placeholder="Cari surat..." />
+    <div style="margin: 10px 0;">
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <button onclick="exportExcel()">Export Excel</button>
+    </div>
+
+    <section class="table-section">
+      <h2>Daftar Surat</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <th>Nomor</th>
+            <th>Tujuan</th>
+            <th>Isi</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tabelSurat"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

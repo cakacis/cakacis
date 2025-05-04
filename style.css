@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input {
+  margin: 5px;
+  padding: 8px;
+  width: 180px;
+}
+
+form button {
+  padding: 8px 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #eee;
+}
+
+td button {
+  padding: 4px 8px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: darkred;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark input,
+body.dark table,
+body.dark th,
+body.dark td {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark header {
+  background-color: #222;
+}
+
+body.dark td button {
+  background-color: #444;
+  color: white;
+}
+
+body.dark td button:hover {
+  background-color: #666;
+}
